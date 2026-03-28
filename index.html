@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ТитьковБанк — Частный коммерческий банк</title>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="nav-container">
+        <div class="logo">ТИТЬКОВ<span>БАНК</span></div>
+        <div class="nav-links">
+            <a href="#home">Главная</a>
+            <a href="#about">О банке</a>
+            <a href="#cards">Карты</a>
+            <a href="#deposits">Вклады</a>
+            <a href="#loans">Кредиты</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<!-- ГЛАВНАЯ -->
+<section id="home">
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>ТитьковБанк<br>Финансовая независимость</h1>
+                <p>Частный банк с 1988 года. Мы сохраняем и приумножаем капиталы наших клиентов, предлагая премиальные продукты и индивидуальный подход.</p>
+                <a href="#cards" class="btn btn-primary">Выбрать карту</a>
+            </div>
+            <div class="rate-board">
+                <h3 style="margin-bottom: 1rem;">Курсы и ставки</h3>
+                <div class="rate-item"><span class="rate-name">USD / RUB</span><span class="rate-value">92,41 ▲</span></div>
+                <div class="rate-item"><span class="rate-name">EUR / RUB</span><span class="rate-value">99,82 ▲</span></div>
+                <div class="rate-item"><span class="rate-name">Ключевая ставка</span><span class="rate-value">16,00%</span></div>
+                <div class="rate-item"><span class="rate-name">Доходность вкладов</span><span class="rate-value">до 18,5%</span></div>
+                <div class="rate-item"><span class="rate-name">Фикс Прайс</span><span class="rate-value">3,59 ↓</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- О БАНКЕ -->
+<section id="about">
+    <div class="container">
+        <h2>О банке</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+            <div style="flex: 2;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">ТитьковБанк основан династией Титьковых в 1988 году. За годы работы мы зарекомендовали себя как надежный партнер для бизнеса и частных лиц.</p>
+                <p style="margin-bottom: 1rem;">Миссия банка — делать банковское обслуживание понятным, честным и выгодным. Мы ценим каждого клиента и предлагаем решения под любые финансовые задачи.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- КАРТЫ -->
+<section id="cards">
+    <div class="container">
+        <h2>Банковские карты</h2>
+        <div class="cards-grid">
+            <div class="card-product">
+                <h3>Титьков Black</h3>
+                <div class="price">0 ₽ <small>обслуживание</small></div>
+                <ul class="feature-list">
+                    <li>Кэшбэк 5% на всё</li>
+                    <li>Бесплатное снятие в любых банкоматах</li>
+                    <li>Металл, премиальный дизайн</li>
+                    <li>Консьерж-сервис 24/7</li>
+                </ul>
+                <a href="#" class="btn" onclick="alert('Заявка принята. Менеджер свяжется в ближайшее время.')">Оформить</a>
+            </div>
+            <div class="card-product">
+                <h3>Титьков Gold</h3>
+                <div class="price">499 ₽ <small>/мес</small></div>
+                <ul class="feature-list">
+                    <li>Кэшбэк 3% на категории на выбор</li>
+                    <li>Страховка путешественников</li>
+                    <li>До 10% на остаток</li>
+                </ul>
+                <a href="#" class="btn" onclick="alert('Заявка принята. Менеджер свяжется в ближайшее время.')">Оформить</a>
+            </div>
+            <div class="card-product">
+                <h3>Титьков Digital</h3>
+                <div class="price">0 ₽ <small>виртуальная</small></div>
+                <ul class="feature-list">
+                    <li>Мгновенный выпуск</li>
+                    <li>Кэшбэк 2% рублями</li>
+                    <li>Бесплатные переводы по СБП</li>
+                </ul>
+                <a href="#" class="btn" onclick="alert('Заявка принята. Менеджер свяжется в ближайшее время.')">Оформить</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ВКЛАДЫ -->
+<section id="deposits">
+    <div class="container">
+        <h2>Вклады</h2>
+        <table class="deposit-table">
+            <thead>
+                <tr><th>Название</th><th>Ставка</th><th>Срок</th><th>Минимальная сумма</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>«Титьков Максимум»</td><td>18,5%</td><td>12 мес</td><td>50 000 ₽</td></tr>
+                <tr><td>«Стабильный тить»</td><td>16,2%</td><td>6 мес</td><td>30 000 ₽</td></tr>
+                <tr><td>«Титьков Онлайн»</td><td>17,0%</td><td>9 мес</td><td>10 000 ₽</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- КРЕДИТЫ -->
+<section id="loans">
+    <div class="container">
+        <h2>Кредитные программы</h2>
+        <div class="cards-grid">
+            <div class="card-product">
+                <h3>Потребительский</h3>
+                <div class="price">от 12,9%</div>
+                <ul class="feature-list"><li>Сумма до 5 млн ₽</li><li>Решение за 15 минут</li><li>Без справок</li></ul>
+                <a href="#" class="btn" onclick="alert('Кредитный специалист свяжется с вами')">Рассчитать</a>
+            </div>
+            <div class="card-product">
+                <h3>Ипотека</h3>
+                <div class="price">от 9,8%</div>
+                <ul class="feature-list"><li>Первый взнос от 10%</li><li>Семейная ипотека</li><li>Субсидированная ставка</li></ul>
+                <a href="#" class="btn" onclick="alert('Кредитный специалист свяжется с вами')">Оставить заявку</a>
+            </div>
+            <div class="card-product">
+                <h3>Автокредит</h3>
+                <div class="price">от 11,5%</div>
+                <ul class="feature-list"><li>Без КАСКО</li><li>Поддержка госпрограмм</li><li>Любые авто</li></ul>
+                <a href="#" class="btn" onclick="alert('Кредитный специалист свяжется с вами')">Подобрать</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section id="contacts">
+    <div class="container">
+        <h2>Отделения и контакты</h2>
+        <div class="contacts-block">
+            <div class="contact-card">
+                <h3>Головной офис</h3>
+                <p>Мой адрес Советский Союз!!!</p>
+                <p>Ежедневно: 09:00 – 21:00</p>
+            </div>
+            <div class="contact-card">
+                <h3>Горячая линия</h3>
+                <p> +7 (937) 094-84-23</p>
+                <p>raz_etka_2010@mail.ru</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    © 2004–2026 АО «ТитьковБанк»<br>
+    Информация на сайте носит ознакомительный характер. Обратитесь в отделение для получения точных условий.
+</div>
+
+</body>
+</html>

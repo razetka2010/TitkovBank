@@ -1,0 +1,284 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0c10;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #eef2f5;
+            line-height: 1.5;
+        }
+
+        /* Навигация */
+        .navbar {
+            background: #05070a;
+            border-bottom: 1px solid #1e2a2f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background: rgba(5, 7, 10, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #d4af37;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #ccdde5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+
+        /* Контейнеры */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            border-bottom: 1px solid #1e2a2f;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            letter-spacing: -0.5px;
+            border-left: 4px solid #d4af37;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #d4af37;
+        }
+
+        /* Герой */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #b0c4ce;
+            margin: 1.5rem 0;
+            max-width: 600px;
+        }
+
+        .rate-board {
+            background: #0f1217;
+            border: 1px solid #2a2f36;
+            border-radius: 24px;
+            padding: 1.5rem;
+            flex: 0.8;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+
+        .rate-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #1e2a2f;
+        }
+
+        .rate-item:last-child {
+            border: none;
+        }
+
+        .rate-name {
+            color: #9aaeb9;
+        }
+
+        .rate-value {
+            font-weight: 700;
+            color: #d4af37;
+        }
+
+        /* Карточки продуктов */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .card-product {
+            background: #0f1217;
+            border: 1px solid #2a2f36;
+            border-radius: 28px;
+            padding: 1.8rem;
+            transition: 0.2s;
+        }
+
+        .card-product:hover {
+            border-color: #d4af37;
+            transform: translateY(-4px);
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 1rem 0;
+            color: #fff;
+        }
+
+        .price small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #8a9aa5;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 1.2rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            padding: 0.7rem 1.5rem;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #d4af37;
+            color: #0a0c10;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #c4a12e;
+        }
+
+        .btn:hover {
+            background: #d4af37;
+            color: #0a0c10;
+        }
+
+        /* Таблица вкладов */
+        .deposit-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0f1217;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .deposit-table th,
+        .deposit-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #1e2a2f;
+        }
+
+        .deposit-table th {
+            background: #05070a;
+            color: #d4af37;
+            font-weight: 500;
+        }
+
+        /* Контакты */
+        .contacts-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .contact-card {
+            background: #0f1217;
+            border-radius: 24px;
+            padding: 1.5rem;
+            flex: 1;
+            border: 1px solid #2a2f36;
+        }
+
+        .footer {
+            background: #05070a;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #6a7a86;
+        }
+
+        @media (max-width: 800px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+        }
